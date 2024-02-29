@@ -1,0 +1,171 @@
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6998AB;
+    color:white;
+    padding:14px;
+    border-radius:15px ;
+}
+
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.boardContainer{ 
+    width:1200px;
+    height:600px; 
+    border-radius: 15px;
+    border:2px solid rgb(114, 120, 120);
+    overflow: hidden;
+    box-shadow: #6998AB  0px 5px 15px;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1{
+    width:20%;
+    height: 50%;
+    background-color: #6998AB;
+    border-radius: 15px;
+    margin-top: 18px;
+    margin-left: 18px;
+    box-shadow: #6998AB  0px 5px 15px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('C:\Users\abuza\Desktop\TafooqGP1\tafooqGP1\src\assets\child2.png');
+    background-size: cover;
+}
+.innerBox1{
+    width:100%;
+    height: 100px;
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    bottom:0;
+}
+.box2{
+    width:20%;
+    height: 30%;
+    background-color: #6998AB;
+    border-radius: 15px;
+    margin-top: 18px;
+    margin-left: 18px;
+    box-shadow: #6998AB  0px 5px 15px;
+    position: relative;
+}
+.innerBox2{
+    width:100%;
+    height:70px;
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    bottom:0;
+}
+
+.box3Container{
+    position: absolute;
+    top: 80px;
+    left:300px;
+    width:50%;
+    height:40%;
+    border-radius: 15px;
+}
+.firstCource{
+    background-color:#6998AB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:9px;
+    margin-bottom: 6px;
+}
+.secondCource{
+    background-color:#6998AB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:9px;
+    margin-bottom: 6px;
+}
+.thiredCource{
+    background-color:#6998AB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:9px;
+    margin-bottom: 6px;
+}
+.FourCource{
+    background-color:#6998AB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:9px;
+    margin-bottom: 6px;
+}
+.box4{
+    position: relative;
+}
+.box4Container{
+    position: absolute;
+    bottom: 5px;
+    left:300px;
+    border-radius: 15px;
+    background-color: #6998AB;
+    width:600px;
+    height:195px;
+    box-shadow: #6998AB  0px 5px 15px;
+    overflow: hidden;
+}
+ button{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: black  0px 5px 15px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+.innerBox4{
+    width:100%;
+    height:120px;
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    bottom:0;
+}
+.box4Container h1{
+    position: absolute;
+    top:37px;
+}
+.box5Container{
+    width:20%;
+    height:80%;
+    background-color: #6998AB;
+    box-shadow: #6998AB  0px 5px 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 80px;
+    left:930px;
+   
+}
