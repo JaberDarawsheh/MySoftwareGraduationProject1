@@ -53,8 +53,9 @@ body {
 /* SIDEBAR */
 #sidebar {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 20px;
+	left: 10px;
+    bottom: 20px;
 	width: 280px;
 	height: 100%;
 	background: var(--light);
@@ -62,7 +63,9 @@ body {
 	font-family: var(--lato);
 	transition: .3s ease;
 	overflow-x: hidden;
+    
 	scrollbar-width: none;
+    border-radius: 18px;
 }
 #sidebar::--webkit-scrollbar {
 	display: none;
@@ -92,7 +95,7 @@ body {
 }
 #sidebar .side-menu {
 	width: 100%;
-	margin-top: 48px;
+	margin-top: 100px;
 }
 #sidebar .side-menu li {
 	height: 48px;
@@ -141,6 +144,7 @@ body {
 }
 #sidebar .side-menu.top li.active a {
 	color: var(--blue);
+    text-align: right;
 }
 #sidebar.hide .side-menu li a {
 	width: calc(48px - (4px * 2));
@@ -191,17 +195,10 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 1000;
+    margin-top: 10px;
+    border-radius: 18px;
 }
-#content nav::before {
-	content: '';
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	bottom: -40px;
-	left: 0;
-	border-radius: 50%;
-	box-shadow: -20px -20px 0 var(--light);
-}
+
 #content nav a {
 	color: var(--dark);
 }
@@ -381,6 +378,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    cursor: pointer;
 }
 #content main .box-info li:nth-child(1) .bx {
 	background: var(--light-blue);
@@ -447,7 +445,7 @@ body {
 #content main .table-data .order table th {
 	padding-bottom: 12px;
 	font-size: 13px;
-	text-align: left;
+	text-align: right;
 	border-bottom: 1px solid var(--grey);
 }
 #content main .table-data .order table td {
@@ -589,4 +587,31 @@ body {
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
 	}
+}
+
+/* Style for the number 3 */
+.number {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #3498db; /* Change the color to your preferred color */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #3498db; /* Border color matches the text color */
+    border-radius: 50%; /* Create a circular shape */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    display: inline-block;
+  }
+  
+  /* Optional: Hover effect */
+  .number:hover {
+    background-color: #3498db; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+.setset:hover{
+    color:#3498db;
+
 }

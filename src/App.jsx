@@ -9,11 +9,21 @@ import StudentLogin from './components/StudendLogin/LoginSignUp'
 import BoardAds from './components/BulletinBoard/Board'
 import Student from './components/StudentHome/Student'
 import StudentDetailes from './components/StudentHome/StudentDetailes'
+import Calender from './components/StudentHome/Calender'
+import { createBrowserRouter , RouterProvider } from 'react-router-dom'
+import MainPage from './components/StudentHome/MainPage'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Student />,
+  },
+]);
 
 function App() {
   return (
     <>
-      <StudentDetailes />
+       <RouterProvider router={router} />
     </>
   )
 }
