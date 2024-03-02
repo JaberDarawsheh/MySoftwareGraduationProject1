@@ -10,7 +10,7 @@ export default class ChatContent extends Component {
     {
       key: 1,
       image:
-        "https://static.vecteezy.com/system/resources/previews/003/843/760/non_2x/a-boy-wears-bomber-jacket-cartoon-character-free-vector.jpg",
+        "src/assets/me.png",
       type: "",
       msg: "مرحبا",
     },
@@ -31,7 +31,7 @@ export default class ChatContent extends Component {
     {
       key: 4,
       image:
-        "https://static.vecteezy.com/system/resources/previews/003/843/760/non_2x/a-boy-wears-bomber-jacket-cartoon-character-free-vector.jpg",
+        "src/assets/me.png",
       type: "",
       msg: "انا بخير",
     },
@@ -45,7 +45,7 @@ export default class ChatContent extends Component {
     {
       key: 6,
       image:
-        "https://static.vecteezy.com/system/resources/previews/003/843/760/non_2x/a-boy-wears-bomber-jacket-cartoon-character-free-vector.jpg",
+        "src/assets/me.png",
       type: "",
       msg: "ما عندي شي",
     },

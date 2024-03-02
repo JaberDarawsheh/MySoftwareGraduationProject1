@@ -52,13 +52,10 @@ function BoardAds() {
             </div>
             <div className='box4'>
                   <div className='box4Container'>
-                    <h1>الاشعارات</h1>
-                    <button>
-                         تم
-                    </button>
+
                     <div className='innerBox4'>
-                    
                    </div>
+
                   </div>
             </div>
 

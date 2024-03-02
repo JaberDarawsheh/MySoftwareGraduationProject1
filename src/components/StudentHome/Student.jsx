@@ -1,4 +1,5 @@
 import React ,{useEffect} from 'react'
+import { Link } from 'react-router-dom';
 import './StudentHome.css'
 
 
@@ -76,75 +77,75 @@ function Student() {
     <>
         <div>
   <section id="sidebar">
-    <a style={{display:'flex',flexDirection:'column'}} href="#" className="brand">
-      <a href="#" className="profile">
-        <img style={{width:'120px', height:'120px',marginBottom:'10px'}} src="src\assets\child2.png" />
-      </a>
+    
+     
       
-      <span style={{fontSize:'30px'}} className="text">مركز تفوَّق</span>
-    </a>
+      
+
+
+    
     <ul className="side-menu top">
       <li className="active">
-        <a href="#">
+        <Link to="/">
           <i className="bx bxs-dashboard" />
           <span style={{fontSize:'21px'}} className="text">الصفحة الرئيسية</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/StudentSchedule">
           <i className="bx bxs-calendar" />
           <span style={{fontSize:'21px'}} className="text">برنامجي</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/StudentExams">
           <i className="bx bxs-doughnut-chart" />
           <span style={{fontSize:'21px'}} className="text">امتحاناتي</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/DailyMarks">
           <i className="bx bxs-happy" />
           <span style={{fontSize:'21px'}} className="text">العلامات اليومية</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/Board">
           <i className="bx bxs-bell-ring" />
           <span style={{fontSize:'21px'}} className="text">لوحة الاعلانات</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/Whiteboard">
           <i className="bx bxs-paint" />
           <span style={{fontSize:'21px'}} className="text">لوحة تدريب ورسم</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/Notes">
           <i className="bx bxs-notepad" />
           <span style={{fontSize:'21px'}} className="text">الملاحظات</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
+        <Link to="/Teachers">
           <i className="bx bxs-group" />
           <span style={{fontSize:'21px'}} className="text">المدرسين</span>
-        </a>
+        </Link>
       </li>
     </ul>
     <ul className="side-menu">
       <li>
-        <a href="#">
+        <Link to="/Settings">
           <i className="bx bxs-cog" />
           <span style={{fontSize:'21px'}} className="setset">الاعدادات</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="logout">
+        <Link to="/Welcome" className="logout">
           <i className="bx bxs-log-out" />
           <span style={{fontSize:'21px'}} className="text">مغادرة</span>
-        </a>
+        </Link>
       </li>
     </ul>
   </section>
@@ -153,11 +154,7 @@ function Student() {
   <section id="content">
     {/* NAVBAR */}
     <nav>
-
-
-
-      <i style={{display:'none'}} className="bx bx-menu" />
-      
+      <i className="bx bx-menu" />
       <form  action="#">
         <div style={{display:'none'}} className="form-input">
           <input type="search" placeholder="Search..." />
@@ -167,14 +164,14 @@ function Student() {
 
       <input type="checkbox" id="switch-mode" hidden />
       <label htmlFor="switch-mode" className="switch-mode" />
-      <a href="#" className="notification">
+      <Link to="/Notification" className="notification">
         <i style={{fontSize:'30px'}} className="bx bxs-bell" />
         <span className="num">2</span>
-      </a>
-      <a href="#" className="notification">
-        <i style={{fontSize:'30px'}} className="fas fa-comment" />
+      </Link>
+      <Link to="/ChatApplication" className="notification">
+        <i style={{fontSize:'30px'}} className="bx bx-chat" />
         <span className="num">1</span>
-      </a>
+      </Link>
        
 
       <a href="#" className="profile">

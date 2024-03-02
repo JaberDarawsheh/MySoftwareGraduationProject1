@@ -1,67 +1,71 @@
-
 import React, { useState } from 'react';
 import './MainPage.css';
 
+
 function MainPage() {
-    const [isAddTaskWindowVisible, setAddTaskWindowVisible] = useState(false);
-    const [isEditTaskWindowVisible, setEditTaskWindowVisible] = useState(false);
-    const [taskList, setTaskList] = useState([]);
-    const [newTask, setNewTask] = useState('');
-    const [editedTask, setEditedTask] = useState('');
-    const [selectedTask, setSelectedTask] = useState(null);
-  
-    const handleShowAddTaskWindow = () => {
-      setAddTaskWindowVisible(true);
-      setSelectedTask(null);
+  const [isAddTaskWindowVisible, setAddTaskWindowVisible] = useState(false);
+  const [isEditTaskWindowVisible, setEditTaskWindowVisible] = useState(false);
+  const [taskList, setTaskList] = useState([]);
+  const [newTask, setNewTask] = useState('');
+  const [editedTask, setEditedTask] = useState('');
+  const [selectedTask, setSelectedTask] = useState(null);
+
+  const handleShowAddTaskWindow = () => {
+    setAddTaskWindowVisible(true);
+    setSelectedTask(null);
+    setNewTask('');
+  };
+
+  const handleHideAddTaskWindow = () => {
+    setAddTaskWindowVisible(false);
+  };
+
+  const handleShowEditTaskWindow = (index) => {
+    setEditTaskWindowVisible(true);
+    setSelectedTask(index);
+    setEditedTask(taskList[index]);
+  };
+
+  const handleHideEditTaskWindow = () => {
+    setEditTaskWindowVisible(false);
+    setSelectedTask(null);
+    setEditedTask('');
+  };
+
+  const handleTaskInputChange = (event) => {
+    setNewTask(event.target.value);
+  };
+
+  const handleAddTask = () => {
+    if (newTask.trim() !== '') {
+      setTaskList((prevTaskList) => [...prevTaskList, newTask]);
       setNewTask('');
-    };
-  
-    const handleHideAddTaskWindow = () => {
-      setAddTaskWindowVisible(false);
-    };
-  
-    const handleShowEditTaskWindow = (index) => {
-      setEditTaskWindowVisible(true);
-      setSelectedTask(index);
-      setEditedTask(taskList[index]);
-    };
-  
-    const handleHideEditTaskWindow = () => {
-      setEditTaskWindowVisible(false);
-      setSelectedTask(null);
-      setEditedTask('');
-    };
-  
-    const handleTaskInputChange = (event) => {
-      setNewTask(event.target.value);
-    };
-  
-    const handleAddTask = () => {
-      if (newTask.trim() !== '') {
-        setTaskList((prevTaskList) => [...prevTaskList, newTask]);
-        setNewTask('');
-        handleHideAddTaskWindow();
-      }
-    };
-  
-    const handleEditTask = () => {
-      if (selectedTask !== null && editedTask.trim() !== '') {
-        setTaskList((prevTaskList) => {
-          const updatedTaskList = [...prevTaskList];
-          updatedTaskList[selectedTask] = editedTask;
-          return updatedTaskList;
-        });
-        handleHideEditTaskWindow();
-      }
-    };
-  
-    const handleDeleteTask = (index) => {
+      handleHideAddTaskWindow();
+    }
+  };
+
+  const handleEditTask = () => {
+    if (selectedTask !== null && editedTask.trim() !== '') {
       setTaskList((prevTaskList) => {
         const updatedTaskList = [...prevTaskList];
-        updatedTaskList.splice(index, 1);
+        updatedTaskList[selectedTask] = editedTask;
         return updatedTaskList;
       });
-    };
+      handleHideEditTaskWindow();
+    }
+  };
+
+  const handleDeleteTask = (index) => {
+    setTaskList((prevTaskList) => {
+      const updatedTaskList = [...prevTaskList];
+      updatedTaskList.splice(index, 1);
+      return updatedTaskList;
+    });
+  };
+
+  const handleShowAlert = () => {
+   alert("add cource");
+  };
 
   return (
     <>
@@ -76,7 +80,7 @@ function MainPage() {
               </span>
             </li>
             <li>
-              <i className="bx bxs-book" />
+              <i className="bx bxs-book" onClick={handleShowAlert} />
               <span className="text">
                 <h3 style={{ fontSize: '21px' }}>المساقات المقترحة بالمركز</h3>
                 <p style={{ fontWeight: 'bold' }}>4</p>
@@ -101,8 +105,14 @@ function MainPage() {
                 {taskList.map((task, index) => (
                   <li key={index}>
                     <span>
-                      <i className="bx deUp bx-edit-alt" onClick={() => handleShowEditTaskWindow(index)} />
-                      <i className="bx deUp bx-trash" onClick={() => handleDeleteTask(index)} />
+                      <i
+                        className="bx deUp bx-edit-alt"
+                        onClick={() => handleShowEditTaskWindow(index)}
+                      />
+                      <i
+                        className="bx deUp bx-trash"
+                        onClick={() => handleDeleteTask(index)}
+                      />
                     </span>
                     <p style={{ fontSize: '26px' }}>{task}</p>
                   </li>
@@ -121,7 +131,7 @@ function MainPage() {
         </div>
       )}
 
-{isEditTaskWindowVisible && (
+      {isEditTaskWindowVisible && (
         <div className="edit-task-window">
           <h1>تحديث المهمة</h1>
           <input
@@ -134,8 +144,6 @@ function MainPage() {
           <button className="cancel" onClick={handleHideEditTaskWindow}>الغاء</button>
         </div>
       )}
-
-
     </>
   );
 }

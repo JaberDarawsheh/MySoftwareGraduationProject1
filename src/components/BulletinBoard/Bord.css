@@ -3,8 +3,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #6998AB;
-    color:white;
+    /* background-color: #7bb3ea; */
+    /* color:white; */
+    background-color:transparent;
+    color:transparent;
     padding:14px;
     border-radius:15px ;
 }
@@ -14,16 +16,19 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+   
 }
 .boardContainer{ 
     width:1200px;
     height:600px; 
     border-radius: 15px;
-    border:2px solid rgb(114, 120, 120);
     overflow: hidden;
-    box-shadow: #6998AB  0px 5px 15px;
-    position: relative;
+    /* box-shadow: #7bb3ea  0px 5px 15px;  */
+    position: absolute;
+    bottom:60px;
+    right:110px;
+   
+    
 }
 
 .header{
@@ -35,11 +40,11 @@
 .box1{
     width:20%;
     height: 50%;
-    background-color: #6998AB;
+    background-color: #3C91E6;
     border-radius: 15px;
     margin-top: 18px;
     margin-left: 18px;
-    box-shadow: #6998AB  0px 5px 15px;
+    box-shadow: #3C91E6  0px 5px 15px;
     overflow: hidden;
     position: relative;
     background-image: url('C:\Users\abuza\Desktop\TafooqGP1\tafooqGP1\src\assets\child2.png');
@@ -56,11 +61,11 @@
 .box2{
     width:20%;
     height: 30%;
-    background-color: #6998AB;
+    background-color: #3C91E6;
     border-radius: 15px;
     margin-top: 18px;
     margin-left: 18px;
-    box-shadow: #6998AB  0px 5px 15px;
+    box-shadow: #3C91E6  0px 5px 15px;
     position: relative;
 }
 .innerBox2{
@@ -81,7 +86,7 @@
     border-radius: 15px;
 }
 .firstCource{
-    background-color:#6998AB;
+    background-color:#3C91E6;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -90,7 +95,7 @@
     margin-bottom: 6px;
 }
 .secondCource{
-    background-color:#6998AB;
+    background-color:#3C91E6;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -99,7 +104,7 @@
     margin-bottom: 6px;
 }
 .thiredCource{
-    background-color:#6998AB;
+    background-color:#3C91E6;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -108,7 +113,7 @@
     margin-bottom: 6px;
 }
 .FourCource{
-    background-color:#6998AB;
+    background-color:#3C91E6;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -120,14 +125,15 @@
     position: relative;
 }
 .box4Container{
+    display: none;
     position: absolute;
     bottom: 5px;
     left:300px;
     border-radius: 15px;
-    background-color: #6998AB;
+    background-color: #3C91E6;
     width:600px;
     height:195px;
-    box-shadow: #6998AB  0px 5px 15px;
+    box-shadow: #3C91E6  0px 5px 15px;
     overflow: hidden;
 }
  button{
@@ -161,8 +167,8 @@ button:hover{
 .box5Container{
     width:20%;
     height:80%;
-    background-color: #6998AB;
-    box-shadow: #6998AB  0px 5px 15px;
+    background-color: #3C91E6;
+    box-shadow: #3C91E6  0px 5px 15px;
     border-radius: 15px;
     position: absolute;
     top: 80px;

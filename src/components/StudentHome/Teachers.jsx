@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Calender() {
+function Teachers() {
   return (
     <>
-      
+     techers
     </>
   )
 }
 
-export default Calender
+export default Teachers
