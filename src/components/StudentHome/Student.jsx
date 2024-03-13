@@ -104,7 +104,7 @@ function Student() {
         </Link>
       </li>
       <li>
-        <Link to="/DailyMarks">
+        <Link to="">
           <i className="bx bxs-happy" />
           <span style={{fontSize:'21px'}} className="text">العلامات اليومية</span>
         </Link>
@@ -116,23 +116,12 @@ function Student() {
         </Link>
       </li>
       <li>
-        <Link to="/Whiteboard">
-          <i className="bx bxs-paint" />
-          <span style={{fontSize:'21px'}} className="text">لوحة تدريب ورسم</span>
-        </Link>
-      </li>
-      <li>
-        <Link to="/Notes">
+        <Link to="">
           <i className="bx bxs-notepad" />
-          <span style={{fontSize:'21px'}} className="text">الملاحظات</span>
+          <span style={{fontSize:'21px'}} className="text">ادوات تساعدك على الدراسة</span>
         </Link>
       </li>
-      <li>
-        <Link to="/Teachers">
-          <i className="bx bxs-group" />
-          <span style={{fontSize:'21px'}} className="text">المدرسين</span>
-        </Link>
-      </li>
+    
     </ul>
     <ul className="side-menu">
       <li>

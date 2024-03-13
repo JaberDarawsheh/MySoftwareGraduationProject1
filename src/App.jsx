@@ -16,7 +16,6 @@ import StudentSchedule from './components/StudentHome/StudentSchedule'
 import StudentExams from './components/StudentHome/StudentExams'
 import Notes from './components/StudentHome/Notes'
 import Whiteboard from './components/StudentHome/Whiteboard'
-import Settings from './components/StudentHome/Settings/Settings'
 import Teachers from './components/StudentHome/Teachers'
 import DailyMarks from './components/StudentHome/DailyMarks'
 import Notification from './components/StudentHome/Notification/Notification'
@@ -40,20 +39,8 @@ const router = createBrowserRouter([
         element:<StudentExams />,
       },
       {
-         path:"/Notes",
-         element:<Notes />,
-      },
-      {
-        path:"/Whiteboard",
-        element:<Whiteboard />,
-      },
-      {
           path:"/Settings",
           element:<Settings />
-      },
-      {
-           path:"/DailyMarks",
-           element:<DailyMarks />,
       },
       {
         path:"/Board",
@@ -75,7 +62,6 @@ const router = createBrowserRouter([
         path:"/Notification",
         element:<Notification />
       }
-
     ],  
   },
 ]);
